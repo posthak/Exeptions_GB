@@ -7,11 +7,10 @@ import java.util.Scanner;
 public class Task3_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        String string = scan.nextLine();
-        string = string.trim();
-        if (string.isEmpty())
+        String value = scan.nextLine();
+        if (value.isEmpty())
             throw new IllegalArgumentException("Пустые строки вводить нельзя");
         else
-            System.out.println(string);
+            System.out.println(value);
     }
 }
